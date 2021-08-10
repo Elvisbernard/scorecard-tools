@@ -45,17 +45,6 @@ class grouping(object):
         else:
             raise ValueError('dictionnary expected to be passed')
 
-#   useless piece of code
-#    def removefromgroup(self, group, value):
-#        if group not in self.dic:
-#            raise ValueError ('Group unkown')
-#        if value.__class__!=list:
-#            self.dic[group].pop(value)
-#        else:
-#            if set(value).issubset(self.dic[group]):
-#                self.dic[group] = self.dic[group].difference(set(value))
-#            else:
-#                raise ValueError ('item not present in group')
 
     def movetogroup(self, src, dest, value):
         if value.__class__ == list:
